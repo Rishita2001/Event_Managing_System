@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+
+    <title>HOSPITALITY</title>
+</head>
+<body>
+    <div class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+          <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <polygon points="50,0 100,0 50,100 0,100" />
+            </svg>
+      
+            <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+              <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+                <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                  <div class="flex items-center justify-between w-full md:w-auto">
+                    <a href="home.htm">
+                      <span class="sr-only">Workflow</span>
+                      <img class="h-15 w-auto sm:h-10" src="images/logo edited.png">
+                    </a>
+                    <div class="-mr-2 flex items-center md:hidden">
+                      <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" id="main-menu" aria-haspopup="true">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Heroicon name: outline/menu -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                  <a href="home.htm" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+      
+                  <a href="event.htm" class="font-medium text-gray-500 hover:text-gray-900">Events</a>
+      
+                  <a href="contact.htm" class="font-medium text-gray-500 hover:text-gray-900">Contact us</a>
+      
+                  <a href="about.htm" class="font-medium text-gray-500 hover:text-gray-900">About us</a>
+      
+                  <a href="login.php" class="font-medium text-indigo-600 text-align:origin-top-right hover:text-indigo-500">Log in</a>
+                  
+                </div>
+              </nav>
+            </div>
+      
+            <!--
+              Mobile menu, show/hide based on menu open state.
+      
+              Entering: "duration-150 ease-out"
+                From: "opacity-0 scale-95"
+                To: "opacity-100 scale-100"
+              Leaving: "duration-100 ease-in"
+                From: "opacity-100 scale-100"
+                To: "opacity-0 scale-95"
+            -->
+            <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+              <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                <div class="px-5 pt-4 flex items-center justify-between">
+                  <div>
+                    <img class="h-8 w-auto" src="images/logo.png" alt="TALENT FIESTA logo">
+                  </div>
+                  <div class="-mr-2">
+                    <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <span class="sr-only">Close main menu</span>
+                      <!-- Heroicon name: outline/x -->
+                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                  <div class="px-2 pt-2 pb-3 space-y-1" role="none">
+                    <a href="home.htm" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Home</a>
+      
+                    <a href="event.htm" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Events</a>
+      
+                    <a href="contact.htm" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Contact us</a>
+      
+                   <a href="about.htm" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">About us</a>
+                  </div>
+                  <div role="none">
+                    <a href="login.php" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100" role="menuitem">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+      
+            
+            <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+              <div class="sm:text-center lg:text-left">
+                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                  <span class="block xl:inline">Right Platform for</span>
+                  <span class="block text-indigo-600 xl:inline">your Talent</span>
+                </h1>
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                  Where anyone can participate.          </p>
+                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                  <div class="rounded-md shadow">
+                    <a href="form.htm" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                      Register Now
+                    </a>
+                  </div>
+                  <div class="mt-3 sm:mt-0 sm:ml-3">
+                    <a href="event.htm" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="images/pic25.jpg" alt="">
+        </div>
+    </div>
+
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+          <div class="sm:w-32 sm:h-full h-full w-full sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0 overflow-hidden">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+              <img src="images/pic50.jpg" alt="microphone img">
+            </svg>
+          </div>
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Hospitality Quiz</h2>
+            <p class="leading-relaxed text-base">The Hospitality quiz will primarily showcase the technical knowledge of the participant along with some fun elements as well. It will be divided in three rounds <br><br> <ul>
+
+              <li> &bullet; Fun Round</li> <li> &bullet; General Knowledge</li> <li> &bullet; Technical Round ( Core areas of the hotel like Front Office, Accommodation Operations, Food Production, Food & Beverage Service and Tourism)</li> </ul>
+              
+              <h2><b> Fun Round </b></h2> <ul>
+              <li> &bullet; There will be no negative marking for the same General Knowledge</li>
+              <li> &bullet; Each student will be asked 10 questions rapidly</li>
+              <li> &bullet; The questions will cover the latest current affairs.</li>
+              <li> &bullet; Indian Awards, personalities, latest events in field of sports, technology will find its way in the quiz
+              </li>
+              <li> &bullet; The questions are non transferable</li>
+              <li> &bullet; There will be a negative marking of 5 points for each wrong answer</li>
+              <li> &bullet; A student can skip a question without answering.</li>
+              <li> &bullet; A student can earn a total of 100 points in this quiz</li>
+              <h2><b>Technical Round</b></h2> 
+
+              <li> &bullet; This round will have multiple choice answers</li>
+              <li> &bullet; The questions will be based on all the core technical hotel departments</li>
+              <li> &bullet; There will be approximately 10 questions for each team</li>
+              <li> &bullet; For every wrong answer there will be negative marking if a question is passed to the next team no negative marking.</li></ul><br>
+              Event Type: Solo <br><br>Judging Criteria: <br>1. Each contestant will get 15 seconds to answer the questions. <br>
+              2. Contestant will earn 10 points with each correct answer. <br>
+              3. Negative marking will be done as per the rules and regulations. <br>
+              4. The ranks will be declared on the basis of total points earned at the end. <br>
+              5. In case of a tie, there will be a quick-fire round to judge the winner. <br>
+              6. The decision of the jury would be deemed to be final</p>
+              <a class="mt-3 text-indigo-500 inline-flex items-center" href="form.htm">Register Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            
+            
+          </div>
+        </div>
+        <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Towel art competition</h2>
+            <p class="leading-relaxed text-base">Once guests enter a room of a resort, chances are it is the first thing that greets them. Whether it is a swan, crocodile, turtle, or even an elephant strewn across the bed with a welcome message beautifully written in flower petals, one glance and their heart begin to melt. It is the luxury-included in resorts’ towel folding designs, which are highly praised in guest reviews. This competition is designed for the participants to showcase their talent in towel origami which is out of ordinary. <br><br>
+
+              Event Type: Solo<br><br>
+              Judging Criteria: <br>1. Judgement will be based upon 4 Following Criteria.
+              <br>2. Concept/Theme
+              <br>3. Complexity
+              <br>4. Creativity
+              <br> 5. Visual Impact</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center" href="form.htm">Register Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="sm:w-32 sm:order-none order-first sm:h-full  h-full w-full sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0 overflow-hidden">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+              <circle cx="6" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <img src="images/pic51.jpg" alt="dancer img">
+            </svg>
+          </div>
+        </div>
+        <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+          <div class="sm:w-32 sm:h-full h-full w-full sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0 overflow-hidden">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+              <img src="images/pic52.jpg" alt="microphone img">
+            </svg>
+          </div>
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Salad Making competition</h2>
+            <p class="leading-relaxed text-base">This event will showcase thepassion and effort of students towards cooking. The participants will display their skills and innovations in preparing variety of Salads. Participants will prepare, cook and present Salad for 1pax/serving within 1 hour. Salads should be prepared such that it exibit modern Culinay art, served in an efficient manner. <br><br>
+
+              Event Type: Solo <br> <br> Judging Criteria: <br>The evaluation parameters will be:
+              <br>1. Presentation/Appearance of the dish
+              <br>2. Cleanliness
+              <br>3. Salad Dressings
+              <br>4. Creativity <br>
+              5. Product quality
+              </p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center"  href="form.htm">Register Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Carving Competition</h2>
+            <p class="leading-relaxed text-base">This event will showcase the passion and effort of students towards Carving. The participants will display their skills and innovations in fruits and vegetables carving. They will showcase their carving skills on fruits and vegetables of their own choice. 2 hours will be allotted to them. <br><br>
+
+              Event Type: Solo <br><br>Judging Criteria: <br>Judges will judge the carving done by the student based upon 2 factors:- <br>
+              1. Complexity/ Difficulty level  <br>
+              2. Appearance</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center" href="form.htm">Register Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="sm:w-32 sm:order-none order-first sm:h-full  h-full w-full sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0 overflow-hidden">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+              <circle cx="6" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <img src="images/pic53.jpg" alt="dancer img">
+            </svg>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    
+
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" >
+              <!---<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">-->
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <img src="images/logo edited.png" ><!--<span class="ml-3 text-xl">TALENT FIESTA</span>-->
+            </a>
+            <p class="mt-2 text-sm text-gray-500">The right platform for your talent.</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">DANCE</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="dance.htm">Classical/ Semi Classical</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="dance.htm">Western</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="dance.htm">Folk</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="dance.htm">Free Style</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LITERARY</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="literary.htm">Poetry</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="literary.htm">Debate</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="literary.htm">Group Discussion</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="literary.htm">Creative Writing</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">FINE ARTS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="art.htm">Poster Making</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="art.htm">Mehendi Making</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="art.htm">Face Painting</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="art.htm">3D Rangoli Making</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">THEATRE</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="theatre.htm">Monoact</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="theatre.htm">Mime</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="theatre.htm">Story Narration</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="theatre.htm">Mimicry Contest</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 TALENT FIESTA 
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"></a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>
